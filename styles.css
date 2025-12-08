@@ -20,7 +20,6 @@ body{
 
 .grid-container{
     display: grid;
-    background-color: aqua;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 1.5em;
@@ -34,27 +33,16 @@ body{
     left: 0;
     right: 0;
 
-    /* justify-content: center; */
-    /* align-content: center; */
     margin: 10em 24em;
-}
-
-.item{
-    background-color: rgb(163, 163, 255);
 }
 
 .sub-grid-container{
     display: grid;
-    background-color: aquamarine;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     gap: 4em;
     grid-template-areas: 
     "subitem-1 subitem-2";
-}
-
-.sub-item{
-    background-color: rgb(0, 194, 129);
 }
 
 .header{
@@ -81,12 +69,10 @@ body{
 
 .subitem-2{
     justify-content: center;
-    /* align-items: center; */
 
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: aliceblue;
 }
 
 .reviews{
@@ -125,18 +111,33 @@ body{
     font-weight: 700;
 }
 
-.profile-pic img{
+.profile-box{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 40px;
+    height: 10em;
+    align-items: center;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    gap: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+.profile-pic{
     object-fit: contain;
     border-radius: 50%;
-    width: 16%;
+    width: 14%;
     height: auto;
 }
 
-.profile-box{
-    background-color: hsl(300, 43%, 22%);
-    border-radius: 16px;
-    padding: 40px;
-    height: 10em;
+.person-details{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
 }
 
 .colton{
@@ -152,6 +153,25 @@ body{
 .anne{
     display: flex;
     align-items: end;
+}
+
+.name{
+    font-size: 17px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+
+.buyer{
+    font-size: 17px;
+    font-weight: 400;
+    color: hsl(333, 80%, 67%);
+}
+
+.personal-review{
+    font-size: 16.5px;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.4;
 }
 
 /* be sure to use stuff like "start", "center", "end"
